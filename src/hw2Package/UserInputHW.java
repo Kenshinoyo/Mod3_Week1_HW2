@@ -2,29 +2,42 @@ package hw2Package;
 import java.util.Scanner;
 
 public class UserInputHW {
+		
+	
+		
+//		static int fib(userInt) {
+//		if(userInt <= 1)
+//			return userInt;
+//	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Scanner userChoice = new Scanner(System.in);
-		System.out.println("Please pick a number.");
+//		Scanner userChoice = new Scanner(System.in);
+//		System.out.println("Please pick a number type: ");
+//		System.out.println("Fibonacci");
+//		System.out.println("Armstrong");
+//		System.out.println("Palindrome");
+//		
+//		
+//		String userPick = userChoice.nextLine();
+//		
+//		switch(userPick) {
+//		case "Fibonacci":
+//			
+//		}
+		
 		
 		Scanner inputCheck = new Scanner(System.in);
 		System.out.println("Please enter a number.");
 		
+		
 		int userInt = inputCheck.nextInt();
 		
 		
-		
-		
-		switch(char) {
-		case "y":
-			
-		}
-		
 //		1) Write Fibonanacci series between the user entered start and end values
 		
-		
+		System.out.println("---Fibonacci Series---");
 		int n1 = 0, n2 = 1;
 		int n3 = userInt;
 		System.out.println(n1);
@@ -43,9 +56,28 @@ public class UserInputHW {
 		
 //		2) Determine whether a user entered number is an Armstrong number
 		
+		System.out.println("---Armstrong Check---");
+		int originalNumber, remainder, result = 0, n = 0;
 		
+		originalNumber = userInt;
+		
+		for(;originalNumber !=0; originalNumber/=10, ++n);
+				
+		originalNumber = userInt;
+		
+		for(;originalNumber !=0; originalNumber/=10) {
+			remainder = originalNumber % 10;
+			result += Math.pow(remainder, n);
+		}
+		
+		if(result == userInt)
+			System.out.println(userInt + " is an Armstrong number.");
+		else
+			System.out.println(userInt + " is not an Armstrong number.");
 		
 //		3) Write a program to see if a user entered string is a palindrome or not
+		
+		String userInput = inputCheck.next();
 		
 
 	}
