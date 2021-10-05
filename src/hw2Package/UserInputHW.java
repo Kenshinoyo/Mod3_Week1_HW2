@@ -43,6 +43,8 @@ public class UserInputHW {
 		
 		//- Fiboncacci series always start with 0 & 1, so values are hard coded
 		int n1 = 0, n2 = 1;
+		
+		//- Variable for how many iterations of the Fibonacci series you want to run
 		int n3 = userInt;
 		System.out.println(n1);
 		System.out.println(n2);
@@ -89,9 +91,10 @@ public class UserInputHW {
 		else
 			System.out.println(userInt + " is not an Armstrong number.");
 		
+		inputCheck.close();
 //		3) Write a program to see if a user entered string is a palindrome or not
 		
-		String userInput = inputCheck.next();
+//		String userInput = inputCheck.next();
 		
 
 	}
